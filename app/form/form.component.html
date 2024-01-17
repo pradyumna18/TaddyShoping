@@ -1,0 +1,46 @@
+<button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button-5">Form</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">IPL PLAYER LIST</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="playerForm" (ngSubmit)="submitPlayer()">
+                    <label>Player Name</label>
+                    <input type="text" placeholder="Enter Name" id="name" formControlName="name" name="name"><br>
+                    <label>IPl Team</label>
+                    <input type="text" placeholder="Enter Team"id="team" formControlName="team" name="team"><br>
+                    <label>Runs</label>
+                    <input type="number" placeholder="Enter Runs"id="runs" formControlName="runs" name="runs"><br>
+                    <label>Best Score</label>
+                    <input type="number" placeholder="Enter Best Score" id="best"  name="best" formControlName="best"><br>
+                    <button type="submit" class="button-5" >Submit</button>
+                    <button type="button" class="button-5" data-bs-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Player Name</th>
+        <th>Ipl Team</th>
+        <th>Runs</th>
+        <th>Best Score</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of users;i:index">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.team}}</td>
+        <td>{{item.runs}}</td>
+        <td>{{item.best}}</td>
+    </tr>
+    </tbody>
+</table>

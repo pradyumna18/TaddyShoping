@@ -1,0 +1,69 @@
+{
+  "player": [
+    {
+      "id": 1,
+      "name": "Ms Dhoni",
+      "team": "chennai",
+      "runs": "4978",
+      "best": "84*"
+    },
+    {
+      "name": "Pradyumna",
+      "team": "Chennai",
+      "runs": 2500,
+      "best": 36,
+      "id": 2
+    },
+    {
+      "name": "Virat Kohli",
+      "team": "Bangalore ",
+      "runs": 5682,
+      "best": 114,
+      "id": 3
+    },
+    {
+      "name": "Kane Willamson",
+      "team": "Gujrat",
+      "runs": 2653,
+      "best": 65,
+      "id": 4
+    },
+    {
+      "name": "Faf Du Plessis",
+      "team": "Bangalore ",
+      "runs": 5623,
+      "best": 86,
+      "id": 5
+    },
+    {
+      "name": "Glen Maxwell",
+      "team": "Bangalore ",
+      "runs": 2365,
+      "best": 53,
+      "id": 6
+    }
+  ],
+  "user": [
+    {
+      "uname": "pradyumna",
+      "email": "pradyumnadesh7@gmail.com",
+      "mobile": "9021093921",
+      "pass": "prad25",
+      "id": 1
+    },
+    {
+      "uname": "taddy",
+      "email": "taddy@2000gmail.com",
+      "mobile": "7776989185",
+      "pass": "tdd18",
+      "id": 2
+    },
+    {
+      "uname": "Teju",
+      "email": "taddy@2000gmail.com",
+      "mobile": "9146961794",
+      "pass": "teju123",
+      "id": 3
+    }
+  ]
+}

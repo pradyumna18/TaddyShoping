@@ -1,0 +1,69 @@
+<!-- <section class="container">
+    <header>Registration Form</header>
+    <form  class="form" [formGroup]="registerForm" (ngSubmit)="formSubmit()">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name" id="fname" formControlName="fname" required ngModel/>
+      </div>
+      <span *ngIf="!registerForm.get('fname')?.valid&& registerForm.get('fname')?.touched">Enter Full Name</span>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="text" placeholder="Enter email address" id="email"formControlName="email" required ngModel/>
+        <span *ngIf="!registerForm.get('email')?.valid&& registerForm.get('email')?.touched">Enter Email ID</span>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="Enter phone number" id="phone"formControlName="phone" required ngModel/>
+          <span *ngIf="!registerForm.get('phone')?.valid&& registerForm.get('phone')?.touched">Enter Phone Number</span>
+        </div>
+        <div class="input-box">
+          <label>Birth Date</label>
+          <input type="date" placeholder="Enter birth date" id="date"formControlName="date" required ngModel/>
+          <span *ngIf="!registerForm.get('date')?.valid&& registerForm.get('date')?.touched">Enter Birt Date</span>
+        </div>
+      </div><br>
+      <div class="gender">
+        <label>Gender</label>
+        <select id="gender" formControlName="gender" ngModel required>
+            <option hidden>Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+          <span *ngIf="!registerForm.get('gender')?.valid&& registerForm.get('gender')?.touched">Enter Birt Date</span>
+      </div>
+      <div class="input-box address">
+        <label>Address</label>
+        <input type="text" placeholder="Enter street address" id="address" formControlName="address" required ngModel/>
+        <div class="column">
+          <div class="select-box">
+            <select id="country" formControlName="country"required ngModel>
+              <option hidden>Country</option>
+              <option>America</option>
+              <option>Japan</option>
+              <option>India</option>
+              <option>Nepal</option>
+            </select>
+            <span *ngIf="!registerForm.get('country')?.valid&& registerForm.get('country')?.touched">Enter Birt Date</span>
+          </div>
+          <div class="select-box">
+            <select id="city" formControlName="city"required ngModel>
+              <option hidden>City</option>
+              <option>Latur</option>
+              <option>Pune</option>
+              <option>Mumbai</option>
+              <option>Nashik</option>
+            </select>
+          </div>
+        </div>
+        <div class="column" >
+          <input type="text" placeholder="Enter your region" id="region"formControlName="region" required ngModel/>
+          <span *ngIf="!registerForm.get('region')?.valid&& registerForm.get('region')?.touched">Enter Birt Date</span>
+          <input type="number" placeholder="Enter Pin Code" id="pin"formControlName="pin" required />
+          <span *ngIf="!registerForm.get('pin')?.valid&& registerForm.get('pin')?.touched">Enter Birt Date</span>
+        </div>
+      </div>
+      <button [disabled]="registerForm.invalid">Submit</button>
+    </form>
+  </section> -->
